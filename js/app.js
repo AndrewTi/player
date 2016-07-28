@@ -84,6 +84,9 @@
         var timer;
         var lastSelect;
 
+        audioId.src = currentPlay.src;
+
+
         function setId(arr) {
             var i = 0;
             return arr.map(function(e) {
@@ -243,7 +246,7 @@
             renderList();
             clickList();
             backgroundColor();
-            range();
+            currentA()
 
             elem.addEventListener("click", function() {
                 elem.firstChild.remove();
