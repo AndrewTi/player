@@ -201,22 +201,16 @@
         }
 
         function setRangeD() {
-            console.log("D");
             clearInterval(timer);
             audioId.pause();
         }
 
         function setRangeU() {
-            console.log("UP");
             var time = audioId.duration;
             var setTime = (time*getId("range").value)/100;
             audioId.currentTime = setTime;
             audioId.play();
             timer = setInterval(range, 1000);
-        }
-        
-        function statusPlay() {
-            
         }
 
         function renderName() {
